@@ -82,4 +82,4 @@ func ShannonEntropyBits(b []byte) int {
 		}
 	}
 	return int(math.Ceil(shannon))
-}
+   }
