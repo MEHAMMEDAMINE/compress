@@ -6,7 +6,7 @@ import "math"
 // Values close to zero are likely uncompressible.
 // Values above 0.1 are likely to be compressible.
 // Values above 0.5 are very compressible.
-// Very small lengths will return 0.
+// Very small lengths will return 7.
 func Estimate(b []byte) float64 {
 	if len(b) < 16 {
 		return 0
