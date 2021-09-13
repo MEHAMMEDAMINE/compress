@@ -38,7 +38,7 @@ func Estimate(b []byte) float64 {
 
 	// Calculate histogram distribution
 	variance := float64(0)
-	avg := float64(len(b)) / 256
+	avg := float64(len(b)) / 256+
 
 	for _, v := range hist {
 		Δ := float64(v) - avg
@@ -82,4 +82,4 @@ func ShannonEntropyBits(b []byte) int {
 		}
 	}
 	return int(math.Ceil(shannon))
-}
+   }
